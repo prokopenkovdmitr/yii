@@ -1,0 +1,33 @@
+Инструкция по запуску проекта
+
+1. Установка зависимостей:
+
+composer require dektrium/yii2-user dektrium/yii2-rbac hail812/yii2-adminlte3
+
+2. Настройка базы данных:
+Настройте подключение к базе данных в config/db.php:
+
+3. Укажите свой путь
+В файлах:
+
+- m250714_232920_create_posts.php
+- m250714_232958_create_posts_visitors.php
+- m250714_233023_create_posts_track.php
+
+Найдите строку
+- $file = 'E:/mysql/Uploads/posts.csv';
+И замените на свой путь
+
+4. Применение миграций:
+php yii migrate
+
+5. Запуск сервера:
+php yii serve
+
+
+6. Доступ:
+Откройте http://localhost:8080.
+
+Используйте 
+логин - admin
+пароль - password
